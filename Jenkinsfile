@@ -27,7 +27,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/Maven2-1.0-SNAPSHOT.jar'
+                sh 'java -cp target/classes com.example.App'
             }
         }
     }
